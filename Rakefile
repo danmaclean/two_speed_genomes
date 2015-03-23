@@ -1,5 +1,5 @@
 
-namespace :raw_to_json
+namespace :raw_to_json do
   directory "cleaned"
 
   desc "gets all the raw pickled Python binary data for host jump and converts them to a single JSON file" 
@@ -29,4 +29,5 @@ namespace :raw_to_json
 
   desc "run all raw to JSON tasks"
   task :all => ["cleaned/host_jump.json", "cleaned/genome_lengths.json", "cleaned/population_evolution.json", "cleaned/reproductive_rates.json", "cleaned/genomes.json"]
+
 end
