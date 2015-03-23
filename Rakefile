@@ -1,5 +1,5 @@
 
-namespace :prepare_raw
+namespace :raw_to_json
   directory "cleaned"
 
   desc "gets all the raw pickled Python binary data for host jump and converts them to a single JSON file" 
