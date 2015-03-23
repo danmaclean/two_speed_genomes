@@ -27,4 +27,6 @@ namespace :raw_to_json
 	  sh "find . -name GenesJMP*.p | python src/pickle_to_json.py > cleaned/genomes.json" 
   end
 
+  desc "run all raw to JSON tasks"
+  task :all => ["cleaned/host_jump.json", "cleaned/genome_lengths.json", "cleaned/population_evolution.json", "cleaned/reproductive_rates.json", "cleaned/genomes.json"]
 end
